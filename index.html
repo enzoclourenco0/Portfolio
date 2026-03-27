@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo Lourenço — Portfolio</title>
+    <meta name="description" content="Enzo Costa Lourenço — Desenvolvedor & Criador. Portfolio criativo.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Noise overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo" data-magnetic>EL<span class="nav-logo-dot">.</span></a>
+            <div class="nav-center">
+                <div class="nav-time" id="nav-time"></div>
+                <div class="nav-subtitle">Portfolio &mdash; 2026</div>
+            </div>
+            <button class="nav-menu-btn" id="nav-menu-btn" data-magnetic aria-label="Menu">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Fullscreen Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay">
+        <div class="menu-content">
+            <div class="menu-links">
+                <a href="#hero" class="menu-link" data-index="01">
+                    <span class="menu-link-text">Início</span>
+                    <span class="menu-link-arrow">→</span>
+                </a>
+                <a href="#about" class="menu-link" data-index="02">
+                    <span class="menu-link-text">Sobre</span>
+                    <span class="menu-link-arrow">→</span>
+                </a>
+                <a href="#work" class="menu-link" data-index="03">
+                    <span class="menu-link-text">Projetos</span>
+                    <span class="menu-link-arrow">→</span>
+                </a>
+                <a href="#skills" class="menu-link" data-index="04">
+                    <span class="menu-link-text">Skills</span>
+                    <span class="menu-link-arrow">→</span>
+                </a>
+                <a href="#contact" class="menu-link" data-index="05">
+                    <span class="menu-link-text">Contato</span>
+                    <span class="menu-link-arrow">→</span>
+                </a>
+            </div>
+            <div class="menu-footer">
+                <span>enzoclourenco22@gmail.com</span>
+                <span>Belo Horizonte, BR</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-row">
+            <div class="hero-left">
+                <h1 class="hero-title">
+                    <span class="hero-title-line">
+                        <span class="title-word" data-delay="0">Enzo</span>
+                    </span>
+                    <span class="hero-title-line title-line-indent">
+                        <span class="title-word" data-delay="1">Lourenço</span>
+                    </span>
+                </h1>
+                <div class="hero-role">
+                    <span class="role-bracket">[</span>
+                    <span class="role-text">Desenvolvedor & Criador</span>
+                    <span class="role-bracket">]</span>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-photo-wrapper">
+                    <img src="FotoPerfil.jpeg" alt="Enzo Lourenço" class="hero-photo">
+                </div>
+                <div class="hero-photo-label">BH &mdash; BR</div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-bar">
+                <div class="scroll-bar-fill"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>HTML</span><span class="marquee-dot">●</span>
+                <span>CSS</span><span class="marquee-dot">●</span>
+                <span>JavaScript</span><span class="marquee-dot">●</span>
+                <span>PHP</span><span class="marquee-dot">●</span>
+                <span>SQL</span><span class="marquee-dot">●</span>
+                <span>C#</span><span class="marquee-dot">●</span>
+                <span>React</span><span class="marquee-dot">●</span>
+                <span>Node.js</span><span class="marquee-dot">●</span>
+                <span>HTML</span><span class="marquee-dot">●</span>
+                <span>CSS</span><span class="marquee-dot">●</span>
+                <span>JavaScript</span><span class="marquee-dot">●</span>
+                <span>PHP</span><span class="marquee-dot">●</span>
+                <span>SQL</span><span class="marquee-dot">●</span>
+                <span>C#</span><span class="marquee-dot">●</span>
+                <span>React</span><span class="marquee-dot">●</span>
+                <span>Node.js</span><span class="marquee-dot">●</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="about-left">
+                <div class="section-label reveal-up">
+                    <span class="label-number">01</span>
+                    <span class="label-line"></span>
+                    <span>Sobre</span>
+                </div>
+                <h2 class="about-heading reveal-up">
+                    Criando<br>
+                    experiências<br>
+                    <em>digitais</em>
+                </h2>
+            </div>
+            <div class="about-right">
+                <p class="about-text reveal-up">
+                    Me chamo Enzo Costa Lourenço, tenho 17 anos e moro em Belo Horizonte. 
+                    Estou na área de TI há 2 anos, cursando o ensino médio técnico no Cotemig.
+                </p>
+                <p class="about-text reveal-up">
+                    Tenho muito interesse pela área e pretendo continuar no ensino superior, 
+                    cursando Análise e Desenvolvimento de Sistemas. Além de TI, gosto da área 
+                    de audiovisual, edição e tratamento de fotos/vídeos.
+                </p>
+                <div class="about-stats">
+                    <div class="stat reveal-up">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Projetos</span>
+                    </div>
+                    <div class="stat reveal-up">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Anos XP</span>
+                    </div>
+                    <div class="stat reveal-up">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Anos Técnico</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work / Projects Section -->
+    <section class="work" id="work">
+        <div class="section-label reveal-up">
+            <span class="label-number">02</span>
+            <span class="label-line"></span>
+            <span>Projetos</span>
+        </div>
+
+        <div class="work-list">
+            <!-- Project 1 -->
+            <a href="#" class="work-item reveal-up" data-img="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80">
+                <div class="work-item-header">
+                    <span class="work-number">01</span>
+                    <span class="work-year">2025</span>
+                </div>
+                <h3 class="work-title">E-commerce Responsivo</h3>
+                <div class="work-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                </div>
+                <div class="work-item-line"></div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="#" class="work-item reveal-up" data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80">
+                <div class="work-item-header">
+                    <span class="work-number">02</span>
+                    <span class="work-year">2025</span>
+                </div>
+                <h3 class="work-title">App de Gestão</h3>
+                <div class="work-tags">
+                    <span>Vue.js</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                </div>
+                <div class="work-item-line"></div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="#" class="work-item reveal-up" data-img="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80">
+                <div class="work-item-header">
+                    <span class="work-number">03</span>
+                    <span class="work-year">2024</span>
+                </div>
+                <h3 class="work-title">Site Institucional</h3>
+                <div class="work-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>WordPress</span>
+                </div>
+                <div class="work-item-line"></div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="#" class="work-item reveal-up" data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80">
+                <div class="work-item-header">
+                    <span class="work-number">04</span>
+                    <span class="work-year">2024</span>
+                </div>
+                <h3 class="work-title">Dashboard Analytics</h3>
+                <div class="work-tags">
+                    <span>React</span>
+                    <span>D3.js</span>
+                    <span>API</span>
+                </div>
+                <div class="work-item-line"></div>
+            </a>
+        </div>
+
+        <!-- Floating preview image -->
+        <div class="work-preview" id="work-preview">
+            <img src="" alt="" id="work-preview-img">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-label reveal-up">
+            <span class="label-number">03</span>
+            <span class="label-line"></span>
+            <span>Skills</span>
+        </div>
+        <div class="skills-container">
+            <div class="skill-row reveal-up">
+                <span class="skill-name">HTML / CSS</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-row reveal-up">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-row reveal-up">
+                <span class="skill-name">PHP</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-row reveal-up">
+                <span class="skill-name">SQL / MySQL</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-row reveal-up">
+                <span class="skill-name">C#</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-row reveal-up">
+                <span class="skill-name">React / Vue</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <div class="section-label reveal-up">
+                <span class="label-number">04</span>
+                <span class="label-line"></span>
+                <span>Contato</span>
+            </div>
+            <h2 class="contact-heading reveal-up">
+                Vamos criar<br>algo <em>juntos</em>?
+            </h2>
+            <div class="contact-links">
+                <a href="mailto:enzoclourenco22@gmail.com" class="contact-link reveal-up" data-magnetic>
+                    <span class="contact-link-label">Email</span>
+                    <span class="contact-link-value">enzoclourenco22@gmail.com</span>
+                    <span class="contact-link-arrow">↗</span>
+                </a>
+                <a href="tel:+5512997368083" class="contact-link reveal-up" data-magnetic>
+                    <span class="contact-link-label">Telefone</span>
+                    <span class="contact-link-value">(12) 99736-8083</span>
+                    <span class="contact-link-arrow">↗</span>
+                </a>
+                <a href="https://linkedin.com/in/seu-perfil" target="_blank" class="contact-link reveal-up" data-magnetic>
+                    <span class="contact-link-label">LinkedIn</span>
+                    <span class="contact-link-value">Conecte-se</span>
+                    <span class="contact-link-arrow">↗</span>
+                </a>
+                <a href="https://github.com/seu-usuario" target="_blank" class="contact-link reveal-up" data-magnetic>
+                    <span class="contact-link-label">GitHub</span>
+                    <span class="contact-link-value">Repositórios</span>
+                    <span class="contact-link-arrow">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-copy">&copy; <span id="year"></span> Enzo Lourenço</span>
+            <span class="footer-location">Belo Horizonte, Brasil</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
