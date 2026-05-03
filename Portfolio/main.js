@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
     initSmoothScroll();
     initSkillBars();
-    initWorkPreview();
     initYear();
     initMagneticButtons();
 });
@@ -178,47 +177,6 @@ function initSkillBars() {
     fills.forEach(fill => observer.observe(fill));
 }
 
-// ===== WORK PREVIEW ON HOVER =====
-function initWorkPreview() {
-    const preview = document.getElementById('work-preview');
-    const previewImg = document.getElementById('work-preview-img');
-    const workItems = document.querySelectorAll('.work-item');
-
-    if (!preview || !previewImg || !workItems.length) return;
-
-    // Don't run on mobile
-    if (window.innerWidth < 1024) return;
-
-    let currentX = 0, currentY = 0;
-    let targetX = 0, targetY = 0;
-
-    workItems.forEach(item => {
-        const imgSrc = item.getAttribute('data-img');
-
-        item.addEventListener('mouseenter', () => {
-            previewImg.src = imgSrc;
-            preview.classList.add('visible');
-        });
-
-        item.addEventListener('mouseleave', () => {
-            preview.classList.remove('visible');
-        });
-
-        item.addEventListener('mousemove', (e) => {
-            targetX = e.clientX + 20;
-            targetY = e.clientY - 100;
-        });
-    });
-
-    function animatePreview() {
-        currentX += (targetX - currentX) * 0.1;
-        currentY += (targetY - currentY) * 0.1;
-        preview.style.left = currentX + 'px';
-        preview.style.top = currentY + 'px';
-        requestAnimationFrame(animatePreview);
-    }
-    animatePreview();
-}
 
 // ===== YEAR =====
 function initYear() {
